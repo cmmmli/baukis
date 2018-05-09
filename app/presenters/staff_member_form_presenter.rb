@@ -6,11 +6,6 @@ class StaffMemberFormPresenter < FormPresenter
   end
 
   def text_field_block(name, label_text, options = {})
-    Rails.logger.info('-------start text_field_block--------')
-    Rails.logger.info(name)
-    Rails.logger.info(label_text)
-    Rails.logger.info(options)
-    Rails.logger.info('-------end text_feild_block---------')
     super(name, label_text, options)
   end
 

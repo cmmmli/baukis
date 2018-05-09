@@ -18,12 +18,6 @@ class FormPresenter
   end
 
   def text_field_block(name, label_text, options = {})
-    Rails.logger.info('----FromPresenter start text_field_block----')
-    Rails.logger.info(name)
-    Rails.logger.info(label_text)
-    Rails.logger.info(options)
-    Rails.logger.info('------end-----')
-  
     markup(:div, class: 'input-block') do |m|
       m << label(name, label_text,
         class: options[:required] ? 'required' : nil)
