@@ -1,4 +1,4 @@
-FactotyGirl.define do
+FactoryGirl.define do
   factory :customer do
     sequence(:email) { |n| "member#{n}@example.jp" }
     family_name '山田'

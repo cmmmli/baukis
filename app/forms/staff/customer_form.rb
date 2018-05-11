@@ -37,13 +37,13 @@ class Staff::CustomerForm
   end
 
   def home_address_params
-    @params.require(:home_address).premit(
+    @params.require(:home_address).permit(
       :postal_code, :prefecture, :city, :address1, :address2
     )
   end
 
   def work_address_params
-    @params.require(:work_address).premit(
+    @params.require(:work_address).permit(
       :postal_code, :prefecture, :city, :address1, :address2,
       :company_name, :division_name
     )
